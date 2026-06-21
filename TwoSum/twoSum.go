@@ -1,7 +1,9 @@
-package main
-
 func twoSum(nums []int, target int) []int {
-	// nums [1, 2] & target 3. in Index 1 = 0, 2 = 1
+	// Hash map:
+
+	// Time complexity: O(n)
+	// Space complexity: O(n)
+
 	mymap := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
 		j, ok := mymap[target-nums[i]]
